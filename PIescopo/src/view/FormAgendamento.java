@@ -40,6 +40,9 @@ public class FormAgendamento extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(0, 151, 178));
+        jPanel1.setForeground(new java.awt.Color(0, 0, 0));
+
         btnAgendar.setText("AGENDAR");
         btnAgendar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -53,8 +56,10 @@ public class FormAgendamento extends javax.swing.JFrame {
             }
         });
 
+        jLabel2.setForeground(new java.awt.Color(102, 102, 102));
         jLabel2.setText("CRM Medico");
 
+        jLabel3.setForeground(new java.awt.Color(102, 102, 102));
         jLabel3.setText("CPF paciente");
 
         textCPFpaciente.addActionListener(new java.awt.event.ActionListener() {
@@ -63,8 +68,10 @@ public class FormAgendamento extends javax.swing.JFrame {
             }
         });
 
+        jLabel4.setForeground(new java.awt.Color(102, 102, 102));
         jLabel4.setText("Data Consulta");
 
+        jLabel5.setForeground(new java.awt.Color(102, 102, 102));
         jLabel5.setText("Horario Consulta");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);

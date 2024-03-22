@@ -8,12 +8,12 @@ package view;
  *
  * @author mariana.sesouza
  */
-public class FormCadastroMedico extends javax.swing.JFrame {
+public class FormCadastroFuncionario extends javax.swing.JFrame {
 
     /**
      * Creates new form FormCadastroPacte
      */
-    public FormCadastroMedico() {
+    public FormCadastroFuncionario() {
         initComponents();
     }
 
@@ -51,12 +51,17 @@ public class FormCadastroMedico extends javax.swing.JFrame {
         jLabel1.setText("Nome");
 
         jLabel2.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel2.setText("Especialidade");
+        jLabel2.setText("Cargo");
 
         jLabel3.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel3.setText("CRM");
+        jLabel3.setText("CPF");
 
-        cmbEspecialidade.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cardiologia", "Endoscopia", "Clinica Geral", "Neurologia", "Ginecologia", "Urologia" }));
+        cmbEspecialidade.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Recepcionista", "Auxiliar" }));
+        cmbEspecialidade.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbEspecialidadeActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -97,9 +102,9 @@ public class FormCadastroMedico extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(textCRM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnCadastrarMed))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnCadastrarMed)
+                    .addComponent(textCRM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(242, 242, 242))
         );
 
@@ -124,6 +129,10 @@ public class FormCadastroMedico extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_textCRMActionPerformed
 
+    private void cmbEspecialidadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbEspecialidadeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbEspecialidadeActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -141,21 +150,23 @@ public class FormCadastroMedico extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FormCadastroMedico.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormCadastroFuncionario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FormCadastroMedico.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormCadastroFuncionario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FormCadastroMedico.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormCadastroFuncionario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FormCadastroMedico.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FormCadastroFuncionario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FormCadastroMedico().setVisible(true);
+                new FormCadastroFuncionario().setVisible(true);
             }
         });
     }

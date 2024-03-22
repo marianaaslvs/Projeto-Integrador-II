@@ -33,6 +33,8 @@ public class FormCadastro extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(0, 151, 178));
+
         cmbTipoCadastro.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Agendamento", "Cadastro", " " }));
         cmbTipoCadastro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -40,6 +42,7 @@ public class FormCadastro extends javax.swing.JFrame {
             }
         });
 
+        jLabel2.setForeground(new java.awt.Color(102, 102, 102));
         jLabel2.setText("SELECIONE CADASTRO OU AGENDAMENTO");
 
         jButton1.setText("Selecionar");
